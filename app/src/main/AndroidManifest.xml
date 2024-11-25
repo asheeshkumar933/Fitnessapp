@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-feature
+        android:name="android.hardware.sensor.step counter"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.sensor.step detector"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.sensor.accelerometer"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/fitnessmeditation_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/fitnessmeditation_icon_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FitnessApp"
+        tools:targetApi="31">
+        <activity
+            android:name=".Pedometer"
+            android:exported="false" />
+        <activity
+            android:name=".StepCounterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FitnessState"
+            android:exported="false" />
+        <activity
+            android:name=".JoggingArticleDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".JoggingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".YogaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FitnessTrackerBmi"
+            android:exported="false" />
+        <activity
+            android:name=".MainPagefitness"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

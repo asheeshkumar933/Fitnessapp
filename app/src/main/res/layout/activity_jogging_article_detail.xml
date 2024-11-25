@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/lightwhite"
+        tools:context=".JoggingArticleDetailActivity">
+
+
+        <ImageView
+            android:id="@+id/imageViewimage"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+
+            app:srcCompat="@drawable/pngimage1" />
+
+        <TextView
+            android:id="@+id/textViewheadig"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            android:text="Health Benefits Of Jogging Everyday Morning" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/textViewcontent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                 android:textColor="@color/gray"
+                android:layout_margin="10dp"
+                android:textAlignment="textStart"
+                android:textSize="20dp"
+                android:text="Regular exercise has a huge impact on our overall well-being, as we all know. Depending on the type of exercise you do, you can reap a variety of benefits. In the section below, we'll go through the specific benefits of jogging regularly." />
+
+        </ScrollView>
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,4 @@
+package drawable.MusicPlayer.MusicPlayerApp
+
+rootProject.name = "Music Player"
+include ':app'
